@@ -1,12 +1,12 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
-const Home = lazy(() => import("pages/Home/Home"));
-const Movies = lazy(() => import("pages/Movies/Movies"));
-const MovieDetails = lazy(() => import("pages/Movies/MovieDetails/MovieDetails"));
-const Cast = lazy(() => import("pages/Movies/Cast/Cast"));
-const Reviews = lazy(() => import("pages/Movies/Reviews/Reviews"));
-const SharedLayot = lazy(() => import("components/SharedLayot/SharedLayot"));
+const Home = lazy(() => import("./pages/home/Home"));
+const Movies = lazy(() => import("./pages/Movies/Movies"));
+const MovieDetails = lazy(() => import("./pages/Movies/MovieDetails/MovieDetails"));
+const Cast = lazy(() => import("./pages/Movies/cast/Cast"));
+const Reviews = lazy(() => import("./pages/Movies/Reviews/Reviews"));
+const SharedLayot = lazy(() => import("./components/SharedLayot/SharedLayot"));
 
 export default function UserRoutes() {
   return (

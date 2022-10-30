@@ -1,10 +1,10 @@
-import { Form, FormButton, FormButtonLabel, FormInput } from "./SearchFormStyled";
+import { Form, FormButton, FormButtonLabel, FormInput } from "./SearchForm.module";
 import { HiOutlineSearch } from "react-icons/hi";
 
 import PropTypes from "prop-types";
 import { useState } from 'react';
 
-export default function SearchForm({onSubmit}) {
+export  function SearchForm({onSubmit}) {
   const [searchName, setSearchName] = useState("");
 
   const handleChange = (e) => {

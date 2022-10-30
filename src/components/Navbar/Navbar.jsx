@@ -1,6 +1,5 @@
 
 import { NavLink } from "react-router-dom"
-// import { NavMenu, NavItem } from "./NavbarStyled"
 import { NavMenu, NavItem } from "./Navbar.module"
 
 export default function Navbar() {

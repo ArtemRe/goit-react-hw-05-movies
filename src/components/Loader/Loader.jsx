@@ -1,10 +1,10 @@
-import { Dna } from  'react-loader-spinner'
+import { Blocks } from  'react-loader-spinner'
 import { LoaderContainer } from './Loader.module'
 
 export default function Loader() {
   return (
     <LoaderContainer>
-      <Dna
+      <Blocks
           visible={true}
           height="400"
           width="400"

@@ -5,7 +5,8 @@ display: flex;
 
 padding: 20px;
 
-background-color: lightgray;
+background-color: ##c0b5c8;
+
 
 margin-top: 20px;
 

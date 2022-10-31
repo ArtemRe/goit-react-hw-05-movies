@@ -1,11 +1,18 @@
 import PropTypes from "prop-types";
 
 import { CastList, CastItem } from "./CastCard.module";
-
+const srcDef = 'http://dummyimage.com/200x300/c0c0c0'
 const CastCard = ({ items }) => {
   const element = items.map(({ profile_path, character, name, cast_id }) => 
     <CastItem key={cast_id}>
-        {profile_path ? <img src={`https://image.tmdb.org/t/p/w200${profile_path}`} alt={name} /> : <img src="http://dummyimage.com/200x300/c0c0c0" alt="placeholder" />}
+      <img
+        src={
+          profile_path
+            ? `https://image.tmdb.org/t/p/w200${profile_path}`
+            :  srcDef
+       }
+        alt={name}
+      />
         <b>{name}</b>
         <p>Character: {character}</p>
     </CastItem>)
@@ -22,3 +29,5 @@ CastCard.propTypes = {
     cast_id: PropTypes.number.isRequired,
   }))
 }
+
+
